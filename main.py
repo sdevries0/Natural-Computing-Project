@@ -37,7 +37,7 @@ def compare_DQN_CMA(hidden_size):
 
         # Print to keep track of progress
         if counter % 100 == 0:
-            print(counter," reward is ", reward)
+            print("After epoch ", counter," the reward is ", reward)
 
     np.savez(path + 'DQN_' + '_'.join(map(str,hidden_size)) + '.npz', np.array(DQN_rewards))
 
@@ -61,7 +61,7 @@ def compare_DQN_CMA(hidden_size):
 
             # Print to keep track of progress
             if counter % 100 == 0:
-                print(counter," reward is ", reward)
+                print("After epoch ", counter," reward is ", reward)
         
         # Exception for exploding weights
         except Exception as e:

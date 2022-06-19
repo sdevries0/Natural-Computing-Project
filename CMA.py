@@ -1,6 +1,5 @@
 # The code from https://arxiv.org/pdf/1604.00772.pdf was used and translated to work in Python.
 
-from calendar import EPOCH
 import numpy as np
 import network
 import warnings
@@ -85,7 +84,7 @@ class Agent():
 
         # Create agents
         for k in range(0, int(self.lmbd)):
-            self.agents.append(network.Network(0))
+            self.agents.append(network.Network())
 
         # Initialize the networks
         for agent in self.agents:

@@ -17,10 +17,10 @@ class Agent:
         self.replay_memory = ReplayMemory(10000, 24, self.network_input)
 
         # Create network and target network
-        self.network = network.Network(0)
+        self.network = network.Network()
         self.network.create_network(self.network_input, self.network_hiddens, self.network_out, 'linear')
         self.network.model.summary()
-        self.target_network = network.Network(0)
+        self.target_network = network.Network()
         self.target_network.create_network(self.network_input, self.network_hiddens, self.network_out, 'linear')
 
         # Set hyperparameters
