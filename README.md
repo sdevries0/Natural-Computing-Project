@@ -17,3 +17,5 @@ This file is used for plotting the moving average of the rewards of both algorit
 
 ## reinforcementLearning
 This file contains the environment and also contains the code for running the agents on the reinforcement learning task. In this class, the total rewards are also computed, and returned as fitnesses for the CMA algorithm.
+
+The running_the_main.png shows the output when running the main. It prints the reward every 100 epochs.
